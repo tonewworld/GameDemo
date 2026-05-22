@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6611525583806323521}
   - component: {fileID: 8507110197323014638}
   - component: {fileID: 4417069924098815370}
-  - component: {fileID: 8819353172089987330}
+  - component: {fileID: 2218400215624554377}
   m_Layer: 0
-  m_Name: GridSpace
+  m_Name: Health
   m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2109d0f1ae81b42f99f9eeba7f3aa5c8, type: 2}
+  - {fileID: 2100000, guid: 9d1e7f8f52fb4494d80b7e7c1817c40d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -106,7 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8819353172089987330
+--- !u!114 &2218400215624554377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,9 +115,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6174370268987914332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1695fbb0f88984e8397d13a1c2433b22, type: 3}
+  m_Script: {fileID: 11500000, guid: ce0e3898be0a6124cbe3a8aa47bc8d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultMaterial: {fileID: 2100000, guid: 2109d0f1ae81b42f99f9eeba7f3aa5c8, type: 2}
-  highlightMaterial: {fileID: 2100000, guid: b26d61567d7104ff382c20f6d690b865, type: 2}
-  isHighlighted: 0
+  defaultMaterial: {fileID: 2100000, guid: 9d1e7f8f52fb4494d80b7e7c1817c40d, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 9d1e7f8f52fb4494d80b7e7c1817c40d, type: 2}
+  healAmount: 10
+  usedHealMaterial: {fileID: 2100000, guid: 2109d0f1ae81b42f99f9eeba7f3aa5c8, type: 2}

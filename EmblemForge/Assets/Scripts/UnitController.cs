@@ -37,10 +37,8 @@ public class UnitController : MonoBehaviour
         foreach (var hitCollider in hitColliders)
         {
             Tile tile = hitCollider.GetComponent<Tile>();
-            if (tile != null)
-            {
-                tile.HighlightTile(this);
-            }
+            if (tile == null || tile is ObstacleTile) continue;
+            tile.HighlightTile(this);
         }
     }
 
@@ -73,6 +71,12 @@ public class UnitController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHP -= damage;
+        HPSlider.value = currentHP;
+    }
+
+    public void Heal(int amount)
+    {
+        currentHP = Mathf.Min(currentHP + amount, maxHP);
         HPSlider.value = currentHP;
     }
 }
