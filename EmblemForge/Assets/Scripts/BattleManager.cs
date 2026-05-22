@@ -206,7 +206,6 @@ public class GameManager : MonoBehaviour
     public void Attack(UnitController attacker, UnitController defender)
     {
         defender.TakeDamage(attacker.unit.strength);
-        //EndPlayerTurn();
     }
 
     private UnitController FindAdjacentEnemy(UnitController selectedUnit)

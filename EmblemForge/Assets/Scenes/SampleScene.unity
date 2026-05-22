@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641228, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -426,12 +426,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a1ec5eebb0d4f2ea790573903af048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementRange: 3
   hasGoneThisTurn: 0
   lastUnitThing: 0
   unit: {fileID: 11400000, guid: 475e2f24541d44e0691f10e95c868584, type: 2}
-  maxHP: 0
-  currentHP: 0
   HPSlider: {fileID: 235659489}
 --- !u!65 &61182489
 BoxCollider:
@@ -1241,12 +1238,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a1ec5eebb0d4f2ea790573903af048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementRange: 3
   hasGoneThisTurn: 0
   lastUnitThing: 0
   unit: {fileID: 11400000, guid: 475e2f24541d44e0691f10e95c868584, type: 2}
-  maxHP: 0
-  currentHP: 0
   HPSlider: {fileID: 1986829765}
 --- !u!65 &708262921
 BoxCollider:
@@ -1364,10 +1358,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9519523a25aeb41cb8f3bfebdf752335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gridSizeX: 15
-  gridSizeY: 15
-  tilePrefab: {fileID: 6174370268987914332, guid: 38e89c51513444921bc434b1b06239a2, type: 3}
-  units: []
+  mapCsv: {fileID: 4900000, guid: 7b6d5143a8e546c4c93775bc65b49054, type: 3}
+  obstaclePrefab: {fileID: 6174370268987914332, guid: 4183f069f610fb841b26bfd52b19497e, type: 3}
+  walkablePrefab: {fileID: 6174370268987914332, guid: 38e89c51513444921bc434b1b06239a2, type: 3}
+  healOncePrefab: {fileID: 6174370268987914332, guid: 609079cc2b128434e8bf087761169272, type: 3}
 --- !u!4 &726532171
 Transform:
   m_ObjectHideFlags: 0
@@ -2317,7 +2311,7 @@ GameObject:
   - component: {fileID: 1130436842}
   - component: {fileID: 1130436843}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: BattleManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2781,12 +2775,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a1ec5eebb0d4f2ea790573903af048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementRange: 3
   hasGoneThisTurn: 0
   lastUnitThing: 0
   unit: {fileID: 11400000, guid: 475e2f24541d44e0691f10e95c868584, type: 2}
-  maxHP: 0
-  currentHP: 0
   HPSlider: {fileID: 336927179}
 --- !u!65 &1404086373
 BoxCollider:
@@ -3188,12 +3179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a1ec5eebb0d4f2ea790573903af048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementRange: 3
   hasGoneThisTurn: 0
   lastUnitThing: 0
   unit: {fileID: 11400000, guid: 475e2f24541d44e0691f10e95c868584, type: 2}
-  maxHP: 0
-  currentHP: 0
   HPSlider: {fileID: 1813190144}
 --- !u!65 &1453670344
 BoxCollider:
